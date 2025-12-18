@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- SEO Primario -->
+    <title>IELujo Corporate | Formación y Consultoría en Luxury Retail</title>
+    <meta name="description" content="Soluciones In-Company de formación ejecutiva para el sector del lujo. Especialistas en Luxury Retail Management, Customer Experience y Capacitación Corporativa en Latam." />
+    <meta name="keywords" content="Lujo, Formación, Capacitación, Retail Management, Customer Service, Consultoría, Empresas, México, Latam, IELujo" />
+    <meta name="author" content="Instituto Europeo del Lujo" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook / WhatsApp (Para que se vea bien al compartir) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ielujo.com/" />
+    <meta property="og:title" content="IELujo Corporate - Soluciones para Empresas" />
+    <meta property="og:description" content="Eleve el estándar de su capital humano. Formación ejecutiva especializada en el sector del lujo para empresas líderes." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1758691736821-f1a600c0c3f1?q=80&w=2064&auto=format&fit=crop" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.ielujo.com/" />
+    <meta property="twitter:title" content="IELujo Corporate - Soluciones para Empresas" />
+    <meta property="twitter:description" content="Formación ejecutiva especializada en el sector del lujo para empresas líderes." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1758691736821-f1a600c0c3f1?q=80&w=2064&auto=format&fit=crop" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                100: '#F9F1D8',
+                200: '#F0DEAA',
+                300: '#E6CB7D',
+                400: '#DCC865',
+                500: '#D4AF37', // Classic Gold
+                600: '#AA8C2C',
+                700: '#806921',
+                800: '#554616',
+                900: '#2B230B',
+              },
+              luxury: {
+                black: '#0a0a0a',
+                charcoal: '#1c1c1c',
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+            },
+            screens: {
+              'print': {'raw': 'print'},
+            }
+          },
+        },
+      };
+    </script>
+    <!-- Google Fonts: Playfair Display (Serif) & Lato (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Estructura de Datos (JSON-LD) para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Instituto Europeo del Lujo",
+      "url": "https://www.ielujo.com",
+      "logo": "https://www.ielujo.com/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/ielujo",
+        "https://www.instagram.com/ielujo",
+        "https://www.linkedin.com/company/ielujo"
+      ],
+      "description": "Institución líder en América Latina dedicada a la formación ejecutiva y consultoría en el sector del lujo.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad de México",
+        "addressCountry": "MX"
+      }
+    }
+    </script>
+
+    <style>
+      body {
+        background-color: #0a0a0a;
+        color: #f5f5f5;
+      }
+      .fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .delay-100 { animation-delay: 100ms; }
+      .delay-200 { animation-delay: 200ms; }
+      .delay-300 { animation-delay: 300ms; }
+      
+      /* Smooth scroll behavior with offset for fixed header */
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+
+      /* =========================================
+         PRINT STYLES - OPTIMIZED FOR PDF ELEGANCE
+         ========================================= */
+      @media print {
+        @page {
+          margin: 1.5cm;
+          size: auto;
+        }
+        
+        /* 1. Global Reset to White Paper Document */
+        body, html {
+          background-color: white !important;
+          color: #1a1a1a !important; /* Dark Gray for better readability */
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          font-size: 11pt !important; /* Optimal reading size */
+        }
+
+        /* 2. Hide Screen-Only Elements */
+        .no-print, nav, button, .download-fab, .fixed {
+          display: none !important;
+        }
+
+        /* 3. Color & Background Overrides (Invert Dark Theme) */
+        .bg-black, .bg-luxury-black, .bg-stone-900, .bg-luxury-charcoal, .bg-white\/5 {
+          background-color: white !important;
+          color: #1a1a1a !important;
+          border: none !important;
+        }
+
+        /* Text Contrast Overrides */
+        .text-white { color: #000000 !important; }
+        .text-gray-300, .text-gray-400, .text-gray-600 { color: #4a4a4a !important; }
+        
+        /* Keep Gold accents but ensure contrast */
+        .text-gold-500, .text-gold-400 { 
+          color: #bfa15f !important; 
+          font-weight: bold !important;
+        }
+        .border-gold-500\/30 { border-color: #bfa15f !important; }
+        
+        /* 4. Layout Optimization (Remove Empty Spaces) */
+        section {
+            min-height: auto !important; /* Critical: removes full-screen forcing */
+            height: auto !important;
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+            display: block !important; /* Removes flex centering which causes gaps */
+            break-inside: avoid;
+        }
+        
+        .container {
+            max-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        /* 5. Hero / Cover Page Specifics */
+        header {
+            height: 90vh !important; /* Keep cover mostly full page */
+            background-image: none !important; /* Remove heavy background ink */
+            background-color: white !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            page-break-after: always; /* Force break after cover */
+            border-bottom: 1px solid #eee;
+        }
+        /* Hide the dark overlay in hero */
+        header .absolute { display: none !important; }
+        /* Ensure logo/text in hero is visible */
+        header h1 { color: #000 !important; }
+        
+        /* 6. Card & Grid Adjustments */
+        .grid {
+           display: grid !important;
+           grid-template-columns: repeat(2, 1fr) !important; /* 2 columns is efficient for paper */
+           gap: 1.5rem !important;
+        }
+        
+        /* Add borders to cards since we lost the background color */
+        #value .group, #solutions .page-break-avoid {
+            border: 1px solid #ddd !important;
+            padding: 1.5rem !important;
+            background-color: #fafafa !important; /* Very light gray for subtle separation */
+        }
+        
+        /* Icons */
+        svg {
+            color: #bfa15f !important; /* Make all icons gold */
+        }
+
+        /* 7. Image Handling */
+        img {
+            max-width: 100% !important;
+            height: auto !important;
+            border-radius: 4px !important;
+            box-shadow: none !important;
+        }
+        
+        /* Hide decorative blurred blobs */
+        .blur-3xl { display: none !important; }
+
+        /* 8. Animations reset */
+        .animate-bounce, .animate-\[fadeInUp_1s_ease-out\], .fade-in-up {
+          animation: none !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        
+        /* 9. Footer Cleanup */
+        footer {
+            margin-top: 2rem !important;
+            border-top: 1px solid #ccc !important;
+            color: #666 !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
